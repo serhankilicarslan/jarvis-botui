@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>J.A.R.V.I.S</title>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/botui/build/botui.min.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/botui/build/botui-theme-default.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body>
+    
+    <div id="app">
+        <input id="transcription" ref="input" type="text" v-model="input" style="display: none;" > <!--@input="sendInput"-->
+        <span id="ws-unsupported" v-if="SpeechSupported">API not supported</span>
+        <div class="buttons">
+          <button v-if="!started" id="button-play-ws" class="btn-speech" v-on:click="mic"><i class="fas fa-microphone"></i></button>
+          <button v-else id="button-stop-ws" class="btn-speech blink_me" v-on:click="mic"><i class="fas fa-microphone"></i></button>
+        </div>
+    </div>
+
+    <div id="jarvis-app" class="botui-app-container">
+      <bot-ui></bot-ui>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="https://unpkg.com/lodash@4.16.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.0"></script>
+    <script src="https://unpkg.com/botui/build/botui.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

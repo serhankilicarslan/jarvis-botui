@@ -1,0 +1,136 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #25ceb6;
+}
+
+iframe {
+  width: 100%;
+}
+
+.botui-app-container {
+  margin-top: 40px;
+  height: 100%;
+}
+
+.botui-container {
+  background-color: #25ceb6;
+}
+.botui-message-content {
+  color: #12796b;
+  background-color: #b6fff5;
+}
+
+.botui-message-content.human {
+  background-color: #28635a;
+}
+
+.botui-actions-text-input {
+  color: #36887d;
+  border-bottom: 1px solid #b6fff5;
+}
+
+.botui-actions-buttons-button {
+  line-height: 1 !important;
+  background-color: #28635a;
+}
+
+.botui-message-content-link {
+  color: #12796b;
+}
+#app {
+  max-width: 500px;
+  margin: 10px auto;
+}
+#transcription
+{
+    background-color: #28635a;
+    font-size: 18px;
+    color: #fff;
+    padding: 6px 5px;
+    margin: 10px;
+    width: 100%;
+    border: 0;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 6px 28px -2px rgba(0,0,0,0.47);
+    -moz-box-shadow: 0px 6px 28px -2px rgba(0,0,0,0.47);
+    box-shadow: 0px 6px 28px -2px rgba(0,0,0,0.47);
+}
+.buttons {
+  text-align: center;
+  margin: 10px;
+}
+.btn-speech {
+    padding: 15px 20px;
+    font-size: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 6px 28px -2px rgba(0,0,0,0.47);
+    -moz-box-shadow: 0px 6px 28px -2px rgba(0,0,0,0.47);
+    box-shadow: 0px 6px 28px -2px rgba(0,0,0,0.47); 
+}
+.btn-speech.stop {
+    padding: 15px;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.blink_me {
+  /*animation: blinker 0.5s cubic-bezier(.5, 0, 1, 1) infinite alternate;*/
+  -webkit-animation: pulse 1.3s infinite; 
+  animation: pulse 1.3s infinite;
+}
+@keyframes blinker { to { opacity: 0.3; } }
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    25% {
+        -webkit-transform: scale(1.25);
+        transform: scale(1.25);
+    }
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    75% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    25% {
+        -webkit-transform: scale(1.25);
+        transform: scale(1.25);
+    }
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    75% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
